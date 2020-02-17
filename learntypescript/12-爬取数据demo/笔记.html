@@ -1,0 +1,42 @@
+分析项目：
+
+class 大类{
+
+    属性：
+        第一个属性：url
+        第二个属性：目录（data）
+    方法：
+        init：运行所有的项目方法
+        getHtml：请求url获取到的内容
+        getJsonInfo：获取的到内容，放入到对象
+        getNewContent：存入到目录（判断：当前目录有没有？）
+        writeFile：写入内容
+    constructor(){
+        this.init();
+    }
+}
+
+new 大类()
+
+
+
+创建项目：
+    1、npm init -y
+    2、tsc --init
+    3、npm install typescript -D
+
+    目录：
+        src
+            index.ts
+
+
+    编写项目：
+
+            请求url : superagent : npm install superagent -D
+            jquery :  cheerio  ：  npm install cheerio -D
+            存储数据结构：
+
+                {
+                    time:1543784638483648343,
+                    data:titleArr
+                }

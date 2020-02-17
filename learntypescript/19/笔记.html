@@ -1,0 +1,33 @@
+命名空间：namespace  ： 模块化
+
+    **语法格式：
+            namespace 名称{
+                namespace 名称{
+                    
+                }
+            }
+
+目录结构：
+
+        package.json   -->npm init  | npm init -y
+        tsconfig.json  -->tsc --init
+        src   |        -->开发阶段
+            index.ts
+        build |        -->生产阶段
+            script.js
+
+
+---------------------目录结构---------------------
+
+        package.json   -->npm init  | npm init -y
+        tsconfig.json  -->tsc --init
+        src   |        -->开发阶段
+            index.ts   -->初始化整个项目的
+            name.ts    -->来完成对于用户名的验证
+            tel.ts     -->来完成对于手机号的验证
+        build |        -->生产阶段
+            script.js
+
+======》引入路径
+///<reference path="name.ts" />
+///<reference path="tel.ts" />

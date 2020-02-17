@@ -1,0 +1,43 @@
+一、泛型函数的“类型” 和  非泛型函数的类型有什么不同？
+
+
+非泛型函数的类型 :  (arg: any) => any
+泛型函数的“类型” :  <T>(arg: T) => T 
+
+******有什么不同：    
+     泛型函数类型前面有一个类型参数（T）
+    
+    a>类型参数也可以有多个
+
+        function fn3 <T,U> ( first:T, last:U  ) {
+
+        }
+
+    b>使用不同的泛型参数名
+        
+        function fn4 <T>(arg:T) : T{
+            return arg;
+        }
+        let Fn4:<P>(arg: P) => P = fn4;
+
+    c>泛型函数的类型对象字面量写法
+            
+        let fn : { <T>(arg:T):T }  = fn1;
+
+
+二、创建泛型接口( interface )
+
+        interface Fn2Inter <T>{
+            (arg:T) : T;
+        }
+        
+        function fn2<T> (arg:T) : T{
+        
+            return arg;
+        
+        }
+        
+        let Fn2:Fn2Inter<string> = fn2;
+    
+
+微信公众号【学习路线】

@@ -1,0 +1,39 @@
+使用接口（interface）来定义对象的类型  ：校验工具
+
+
+1、interface格式
+
+    interface Person{
+        name:string;
+        sex:string;
+    }
+
+    **建议：首字母大写、【注意分号】
+
+2、可选属性 ( ? )
+
+    interface Person{
+        name:string;
+        sex:string;
+        age?:number;
+    }
+
+3、任意属性 (  [propName: string] : any  )
+
+    interface Person{
+        name:string;
+        sex?:string;
+        age?:number;
+        [propName: string] : any;
+        run():string
+    }
+
+4、只读属性( readonly )
+
+    interface Person{
+        readonly name:string;
+        sex?:string;
+        age?:number;
+        [propName: string] : any;
+        run():string
+    }
