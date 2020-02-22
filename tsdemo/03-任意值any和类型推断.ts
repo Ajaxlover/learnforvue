@@ -1,8 +1,8 @@
-var num:any = 1;
+var num1:any = 1;
 
-num = true;
+num1 = true;
 
-num = '111';
+num1 = '111';
 
 // 变量声明未赋值就会被认为是任意值类型  等价于 var num2:any 
 var num2;
